@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><i>Editable Resume by kashaf Aman </i></h1>
+    <form id="Resume">
+        <fieldset>
+            <legend><b>personal information </b></legend>
+            <label for="name">First Name:</label>
+            <br>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="name">Last Name:</label>
+            <br>
+            <input type="text" id="lastname" placeholder="Enter your last name" required>
+
+            <label for="mobile phone no">Phone No:</label>
+            <br>
+            <input type="text" id="phone no" placeholder="Enter your phone no " required>
+
+            <label for="email">Email ID:</label>
+            <br>
+            <input type="text" id="email" placeholder="Enter your email id" required>
+
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="Education"> Education: </label>
+            <br>
+            <textarea id="Education" placeholder = "Enter your Education" rows="5" required></textarea>
+        </fieldset>
+
+    <fieldset>
+        <legend>Experiance</legend>
+        <label for="Experiance"> Experiance: </label>
+        <br>
+        <textarea id="Experiance" placeholder=" Enter your work Experiance" rows="5" required></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Skills</legend>
+        <label for="Skills">Skills:</label>
+        <br>
+        <textarea id="Skills" placeholder=" Enter your working skills" rows="5" required></textarea>
+    </fieldset>
+    <button type="submit"><b>Generate Resume</b></button>
+
+    </form>
+    <br>
+    <!--Editable resume-->
+    <div id="resume-display" contenteditable="true">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
